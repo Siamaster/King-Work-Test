@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_feb69/fast"
+/usr/bin/make -f CMakeFiles/cmTC_feb69.dir/build.make CMakeFiles/cmTC_feb69.dir/build
+make[1]: Entering directory '/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_feb69.dir/CheckSymbolExists.c.o
+/usr/bin/clang-5.0    -o CMakeFiles/cmTC_feb69.dir/CheckSymbolExists.c.o   -c /home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_feb69
+/home/siamaster/Development/Tools/CLion/clion-2018.2.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_feb69.dir/link.txt --verbose=1
+/usr/bin/clang-5.0      -rdynamic CMakeFiles/cmTC_feb69.dir/CheckSymbolExists.c.o  -o cmTC_feb69 
+CMakeFiles/cmTC_feb69.dir/CheckSymbolExists.c.o: In function `main':
+/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:(.text+0x19): undefined reference to `pthread_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_feb69.dir/build.make:86: recipe for target 'cmTC_feb69' failed
+make[1]: *** [cmTC_feb69] Error 1
+make[1]: Leaving directory '/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_feb69/fast' failed
+make: *** [cmTC_feb69/fast] Error 2
+
+File /home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3036d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3036d.dir/build.make CMakeFiles/cmTC_3036d.dir/build
+make[1]: Entering directory '/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3036d.dir/CheckFunctionExists.c.o
+/usr/bin/clang-5.0   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3036d.dir/CheckFunctionExists.c.o   -c /home/siamaster/Development/Tools/CLion/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3036d
+/home/siamaster/Development/Tools/CLion/clion-2018.2.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3036d.dir/link.txt --verbose=1
+/usr/bin/clang-5.0  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3036d.dir/CheckFunctionExists.c.o  -o cmTC_3036d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+CMakeFiles/cmTC_3036d.dir/build.make:86: recipe for target 'cmTC_3036d' failed
+make[1]: *** [cmTC_3036d] Error 1
+make[1]: Leaving directory '/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_3036d/fast' failed
+make: *** [cmTC_3036d/fast] Error 2
+
+

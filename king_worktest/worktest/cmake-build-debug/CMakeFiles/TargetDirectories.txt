@@ -1,0 +1,4 @@
+/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/ALWAYS_DO_POST_BUILD.dir
+/home/siamaster/Development/king_worktest/king_worktest/worktest/cmake-build-debug/CMakeFiles/worktest.dir
